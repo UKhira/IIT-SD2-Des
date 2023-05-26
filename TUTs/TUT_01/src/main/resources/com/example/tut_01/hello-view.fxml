@@ -1,60 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<VBox alignment="CENTER" prefHeight="351.0" prefWidth="369.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tut_01.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-  </padding>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="217.576171875">
-         <VBox.margin>
-            <Insets right="80.0" top="30.0" />
-         </VBox.margin>
-         <font>
-            <Font name="System Bold" size="24.0" />
-         </font>
-      </Text>
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" wrappingWidth="60.13671875">
-               <HBox.margin>
-                  <Insets left="20.0" right="20.0" />
-               </HBox.margin></Text>
-            <TextField prefHeight="25.0" prefWidth="210.0" />
-         </children>
-         <VBox.margin>
-            <Insets />
-         </VBox.margin>
-      </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="76.13671875">
-               <HBox.margin>
-                  <Insets left="20.0" />
-               </HBox.margin></Text>
-            <TextField prefHeight="24.0" prefWidth="212.0">
-               <HBox.margin>
-                  <Insets left="3.0" />
-               </HBox.margin></TextField>
-         </children>
-         <VBox.margin>
-            <Insets top="-10.0" />
-         </VBox.margin>
-      </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <Button mnemonicParsing="false" text="Sign Up">
-               <HBox.margin>
-                  <Insets left="200.0" />
-               </HBox.margin></Button>
-         </children>
-      </HBox>
+      <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text=" New                        Ctrl+N" />
+                  <MenuItem mnemonicParsing="false" text="New from Teplate" />
+              <MenuItem mnemonicParsing="false" text="Open" />
+                  <MenuItem mnemonicParsing="false" text="Open Recent" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Save As..." />
+                  <MenuItem mnemonicParsing="false" text="Revert to Save" />
+                  <MenuItem mnemonicParsing="false" text="Reveal in Explorer" />
+                  <MenuItem mnemonicParsing="false" text="Import" />
+                  <MenuItem mnemonicParsing="false" text="Include" />
+                  <MenuItem mnemonicParsing="false" text="Close Window          Ctrl+W" />
+                  <MenuItem mnemonicParsing="false" text="Preference                Ctrl+," />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Undo Insert Menu Item" />
+                  <MenuItem mnemonicParsing="false" text="Redo" />
+                  <MenuItem mnemonicParsing="false" text="Cut" />
+              <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Paste Into" />
+                  <MenuItem mnemonicParsing="false" text="Duplicate" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <MenuItem mnemonicParsing="false" text="Select All" />
+                  <MenuItem mnemonicParsing="false" text="Select None" />
+                  <MenuItem mnemonicParsing="false" text="Select Parent" />
+                  <MenuItem mnemonicParsing="false" text="Select Next" />
+                  <MenuItem mnemonicParsing="false" text="Select Previous" />
+                  <MenuItem mnemonicParsing="false" text="Trim Document to Section" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="View">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="Content" />
+                  <MenuItem mnemonicParsing="false" text="Propeties" />
+                  <MenuItem mnemonicParsing="false" text="Layout" />
+                  <MenuItem mnemonicParsing="false" text="Code" />
+                <MenuItem mnemonicParsing="false" text="Hide Library" />
+                  <MenuItem mnemonicParsing="false" text="Hide Document" />
+                  <MenuItem mnemonicParsing="false" text="Show CSS Analyzer" />
+                  <MenuItem mnemonicParsing="false" text="Show Left Panel" />
+                  <MenuItem mnemonicParsing="false" text="Hide Right Panel" />
+                  <MenuItem mnemonicParsing="false" text="Show Outline" />
+                  <MenuItem mnemonicParsing="false" text="Show Sample Data" />
+                  <MenuItem mnemonicParsing="false" text="Disable Alignment Grid" />
+                  <MenuItem mnemonicParsing="false" text="Zoom" />
+                  <MenuItem mnemonicParsing="false" text="Show Sample Controller Skeleton" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Insert">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="Containers" />
+                <MenuItem mnemonicParsing="false" text="Controls" />
+                  <MenuItem mnemonicParsing="false" text="Gluon" />
+                  <MenuItem mnemonicParsing="false" text="Menu" />
+                  <MenuItem mnemonicParsing="false" text="Miscelleneous" />
+                  <MenuItem mnemonicParsing="false" text="Shapes" />
+                  <MenuItem mnemonicParsing="false" text="Charts" />
+                  <MenuItem mnemonicParsing="false" text="3D" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Modify">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="Fit to Parent" />
+                  <MenuItem mnemonicParsing="false" text="Use Computed Size" />
+                <MenuItem mnemonicParsing="false" text="Gridpane" />
+                  <MenuItem mnemonicParsing="false" text="Set Effect" />
+                  <MenuItem mnemonicParsing="false" text="Add Popup Control" />
+                  <MenuItem mnemonicParsing="false" text="Scene Size" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Arrange">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Bring to Front" />
+                  <MenuItem mnemonicParsing="false" text="Send to Back" />
+                  <MenuItem mnemonicParsing="false" text="Bring Forward" />
+                  <MenuItem mnemonicParsing="false" text="Send Backward" />
+                  <MenuItem mnemonicParsing="false" text="Wrap in" />
+                  <MenuItem mnemonicParsing="false" text="Unwrap" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Preview">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="Show Preview in Window" />
+                <MenuItem mnemonicParsing="false" text="Show Preview in Dialog" />
+                  <MenuItem mnemonicParsing="false" text="Themes" />
+                  <MenuItem mnemonicParsing="false" text="Gluon Swatch" />
+                  <MenuItem mnemonicParsing="false" text="Scene Style Sheets" />
+                  <MenuItem mnemonicParsing="false" text="Internationalization" />
+                  <MenuItem mnemonicParsing="false" text="Preview Size" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Window">
+              <items>
+                <MenuItem mnemonicParsing="false" text="No Document" />
+                  <CheckMenuItem mnemonicParsing="false" text="hello-view.fxml" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="Scene Builder Help" />
+                <MenuItem mnemonicParsing="false" text="JavaFX" />
+                  <MenuItem mnemonicParsing="false" text="Contribute to Scene Builder" />
+                  <MenuItem mnemonicParsing="false" text="Gluon Scene Builder Home" />
+                  <MenuItem mnemonicParsing="false" text="Check for Update..." />
+                  <MenuItem mnemonicParsing="false" text="Register..." />
+                  <MenuItem mnemonicParsing="false" text="Show Welcome Page" />
+                  <MenuItem mnemonicParsing="false" text="About Scene Builder" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
    </children>
-</VBox>
+</AnchorPane>
