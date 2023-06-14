@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text=" New                        Ctrl+N" />
+                        <MenuItem mnemonicParsing="false" text="New from Template" />
+                        <MenuItem mnemonicParsing="false" text="Open" />
+                        <MenuItem mnemonicParsing="false" text="Open Recent" />
+                        <MenuItem mnemonicParsing="false" text="Save" />
+                        <MenuItem mnemonicParsing="false" text="Save As..." />
+                        <MenuItem disable="true" mnemonicParsing="false" text="Revert to Save" />
+                        <MenuItem mnemonicParsing="false" text="Reveal in Explorer" />
+                        <MenuItem mnemonicParsing="false" text="Import" />
+                        <MenuItem mnemonicParsing="false" text="Include" />
+                        <MenuItem mnemonicParsing="false" text="Close Window          Ctrl+W" />
+                        <MenuItem mnemonicParsing="false" text="Preference                Ctrl+," />
+                        <MenuItem fx:id="quit" mnemonicParsing="false" text="Quit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Undo Insert Menu Item" />
+                        <MenuItem disable="true" mnemonicParsing="false" text="Redo" />
+                        <MenuItem mnemonicParsing="false" text="Cut" />
+                        <MenuItem mnemonicParsing="false" text="Copy" />
+                        <MenuItem disable="true" mnemonicParsing="false" text="Paste" />
+                        <MenuItem disable="true" mnemonicParsing="false" text="Paste Into" />
+                        <MenuItem mnemonicParsing="false" text="Duplicate" />
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                        <MenuItem mnemonicParsing="false" text="Select All" />
+                        <MenuItem mnemonicParsing="false" text="Select None" />
+                        <MenuItem mnemonicParsing="false" text="Select Parent" />
+                        <MenuItem mnemonicParsing="false" text="Select Next" />
+                        <MenuItem mnemonicParsing="false" text="Select Previous" />
+                        <MenuItem mnemonicParsing="false" text="Trim Document to Section" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Content" />
+                        <MenuItem mnemonicParsing="false" text="Propeties" />
+                        <MenuItem mnemonicParsing="false" text="Layout" />
+                        <MenuItem mnemonicParsing="false" text="Code" />
+                        <MenuItem mnemonicParsing="false" text="Hide Library" />
+                        <MenuItem mnemonicParsing="false" text="Hide Document" />
+                        <MenuItem mnemonicParsing="false" text="Show CSS Analyzer" />
+                        <MenuItem mnemonicParsing="false" text="Show Left Panel" />
+                        <MenuItem mnemonicParsing="false" text="Hide Right Panel" />
+                        <MenuItem mnemonicParsing="false" text="Show Outline" />
+                        <MenuItem mnemonicParsing="false" text="Show Sample Data" />
+                        <MenuItem mnemonicParsing="false" text="Disable Alignment Grid" />
+                        <MenuItem mnemonicParsing="false" text="Zoom" />
+                        <MenuItem mnemonicParsing="false" text="Show Sample Controller Skeleton" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Insert">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Containers" />
+                        <MenuItem mnemonicParsing="false" text="Controls" />
+                        <MenuItem mnemonicParsing="false" text="Gluon" />
+                        <MenuItem mnemonicParsing="false" text="Menu" />
+                        <MenuItem mnemonicParsing="false" text="Miscelleneous" />
+                        <MenuItem mnemonicParsing="false" text="Shapes" />
+                        <MenuItem mnemonicParsing="false" text="Charts" />
+                        <MenuItem mnemonicParsing="false" text="3D" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Modify">
+                    <items>
+                        <MenuItem disable="true" mnemonicParsing="false" text="Fit to Parent" />
+                        <MenuItem disable="true" mnemonicParsing="false" text="Use Computed Size" />
+                        <MenuItem mnemonicParsing="false" text="Gridpane" />
+                        <MenuItem mnemonicParsing="false" text="Set Effect" />
+                        <MenuItem mnemonicParsing="false" text="Add Popup Control" />
+                        <MenuItem mnemonicParsing="false" text="Scene Size" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Arrange">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Bring to Front" />
+                        <MenuItem mnemonicParsing="false" text="Send to Back" />
+                        <MenuItem mnemonicParsing="false" text="Bring Forward" />
+                        <MenuItem mnemonicParsing="false" text="Send Backward" />
+                        <MenuItem mnemonicParsing="false" text="Wrap in" />
+                        <MenuItem disable="true" mnemonicParsing="false" text="Unwrap" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Preview">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Show Preview in Window" />
+                        <MenuItem disable="true" mnemonicParsing="false" text="Show Preview in Dialog" />
+                        <MenuItem mnemonicParsing="false" text="Themes" />
+                        <MenuItem mnemonicParsing="false" text="Gluon Swatch" />
+                        <MenuItem mnemonicParsing="false" text="Scene Style Sheets" />
+                        <MenuItem mnemonicParsing="false" text="Internationalization" />
+                        <MenuItem mnemonicParsing="false" text="Preview Size" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Window">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="No Document" />
+                        <CheckMenuItem mnemonicParsing="false" text="hello-view.fxml" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Scene Builder Help" />
+                        <MenuItem mnemonicParsing="false" text="JavaFX" />
+                        <MenuItem mnemonicParsing="false" text="Contribute to Scene Builder" />
+                        <MenuItem mnemonicParsing="false" text="Gluon Scene Builder Home" />
+                        <MenuItem mnemonicParsing="false" text="Check for Update..." />
+                        <MenuItem mnemonicParsing="false" text="Register..." />
+                        <MenuItem mnemonicParsing="false" text="Show Welcome Page" />
+                        <MenuItem mnemonicParsing="false" text="About Scene Builder" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <SplitPane dividerPositions="0.3" layoutX="14.0" layoutY="32.0" orientation="VERTICAL" prefHeight="444.0" prefWidth="642.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="153.0" prefWidth="640.0">
+               <children>
+                  <ListView layoutY="-8.0" prefHeight="175.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Show" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </ListView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="238.0" prefWidth="640.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" layoutX="166.0" layoutY="40.0" prefHeight="290.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <AreaChart prefHeight="288.0" prefWidth="316.0" title="Chart" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <xAxis>
+                                  <CategoryAxis prefHeight="14.0" prefWidth="259.0" side="BOTTOM">
+                                       <tickLabelFont>
+                                          <Font size="9.0" />
+                                       </tickLabelFont>
+                                       <cursor>
+                                          <Cursor fx:constant="DEFAULT" />
+                                       </cursor>
+                                    </CategoryAxis>
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </AreaChart>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="288.0" prefWidth="402.0">
+                           <children>
+                              <ImageView fitHeight="632.0" fitWidth="630.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@e6c55690faa927b2c0339ee9a6d0817f.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</AnchorPane>

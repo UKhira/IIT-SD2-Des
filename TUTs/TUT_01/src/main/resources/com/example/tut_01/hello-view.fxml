@@ -6,7 +6,6 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -19,7 +18,7 @@
                   <MenuItem mnemonicParsing="false" text="Open Recent" />
                   <MenuItem mnemonicParsing="false" text="Save" />
                   <MenuItem mnemonicParsing="false" text="Save As..." />
-                  <MenuItem mnemonicParsing="false" text="Revert to Save" />
+                  <MenuItem disable="true" mnemonicParsing="false" text="Revert to Save" />
                   <MenuItem mnemonicParsing="false" text="Reveal in Explorer" />
                   <MenuItem mnemonicParsing="false" text="Import" />
                   <MenuItem mnemonicParsing="false" text="Include" />
@@ -31,11 +30,11 @@
           <Menu mnemonicParsing="false" text="Edit">
             <items>
                   <MenuItem mnemonicParsing="false" text="Undo Insert Menu Item" />
-                  <MenuItem mnemonicParsing="false" text="Redo" />
+                  <MenuItem disable="true" mnemonicParsing="false" text="Redo" />
                   <MenuItem mnemonicParsing="false" text="Cut" />
               <MenuItem mnemonicParsing="false" text="Copy" />
-                  <MenuItem mnemonicParsing="false" text="Paste" />
-                  <MenuItem mnemonicParsing="false" text="Paste Into" />
+                  <MenuItem disable="true" mnemonicParsing="false" text="Paste" />
+                  <MenuItem disable="true" mnemonicParsing="false" text="Paste Into" />
                   <MenuItem mnemonicParsing="false" text="Duplicate" />
                   <MenuItem mnemonicParsing="false" text="Delete" />
                   <MenuItem mnemonicParsing="false" text="Select All" />
@@ -78,8 +77,8 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Modify">
               <items>
-                  <MenuItem mnemonicParsing="false" text="Fit to Parent" />
-                  <MenuItem mnemonicParsing="false" text="Use Computed Size" />
+                  <MenuItem disable="true" mnemonicParsing="false" text="Fit to Parent" />
+                  <MenuItem disable="true" mnemonicParsing="false" text="Use Computed Size" />
                 <MenuItem mnemonicParsing="false" text="Gridpane" />
                   <MenuItem mnemonicParsing="false" text="Set Effect" />
                   <MenuItem mnemonicParsing="false" text="Add Popup Control" />
@@ -93,13 +92,13 @@
                   <MenuItem mnemonicParsing="false" text="Bring Forward" />
                   <MenuItem mnemonicParsing="false" text="Send Backward" />
                   <MenuItem mnemonicParsing="false" text="Wrap in" />
-                  <MenuItem mnemonicParsing="false" text="Unwrap" />
+                  <MenuItem disable="true" mnemonicParsing="false" text="Unwrap" />
               </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Preview">
               <items>
                   <MenuItem mnemonicParsing="false" text="Show Preview in Window" />
-                <MenuItem mnemonicParsing="false" text="Show Preview in Dialog" />
+                <MenuItem disable="true" mnemonicParsing="false" text="Show Preview in Dialog" />
                   <MenuItem mnemonicParsing="false" text="Themes" />
                   <MenuItem mnemonicParsing="false" text="Gluon Swatch" />
                   <MenuItem mnemonicParsing="false" text="Scene Style Sheets" />
