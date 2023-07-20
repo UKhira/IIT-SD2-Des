@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9e0f206-bc84-4770-9d7c-63a5acb10a63" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../I_Startingup/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TUTs/TUT_01/src/main/resources/com/example/tut_01/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../TUTs/TUT_01/src/main/resources/com/example/tut_01/hello-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="d9e0f206-bc84-4770-9d7c-63a5acb10a63" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +22,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/UKhira/Documents/GitHub/IIT-SD2-Des/Practicals_selfStud",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
